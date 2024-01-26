@@ -1,0 +1,287 @@
+/* CSS */
+
+body {
+    background: rgb(219,219,219);
+    background: linear-gradient(0deg, rgba(219,219,219,1) 0%, rgba(237,237,237,1) 100%);
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
+.intro_text {
+    max-width: 656px;
+    margin: auto;   
+}
+
+.intro-container {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    animation: fade-down 0.5s;
+}
+
+/* paragraphs CSS */
+p {
+    color: var(--Black-50, var(--Black-50, #7E7E7E));
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    }
+
+/* img CSS */
+img.responsive-img {
+width: 128px;
+height: auto;
+}
+
+/* Nav adjustments */
+
+.nav-container {
+    width: 100%;
+    margin-bottom: 40px;
+    animation: fade-down 0.5s;
+}
+
+nav ul .dantecurin a{
+    color: #1985A1;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+nav ul li a {
+    font-family: Inter;
+    color: #1e1e1e;
+    font-size: 17px;
+}
+
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: rgba(30, 30, 30, 0.4);
+}
+
+nav ul .dantecurin a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #1985A1;
+    opacity: 0.5;
+}
+    
+h1 {
+    color: var(--Black-100, #242424);
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    color: var(--Black-100, #242424);
+    text-align:left;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 10px 0px 5px 0px;
+    padding:0;
+;
+}
+
+h3 {
+    color: var(--Black-100, #7E7E7E);
+    text-align:left;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:0;
+    padding:0;
+}
+
+h4 {
+    color: var(--Black-100, #575757);
+    text-align:left;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin:20;
+    padding:0;
+}
+
+.letstalk {
+    animation: fade-down 0.5s;
+    margin-top: 50px;
+    color: #1985A1;
+}
+
+
+/* Responsiveness---------- */
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+/* Footer adjustments */
+
+.page-footer {
+    height: 60px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    color: var(--Black-50, var(--Black-50, #7E7E7E));
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+footer a {
+    padding-right: 15px;
+}
+
+footer a:hover {
+    padding-right: 15px;
+    color: rgba(30, 30, 30, 0.25);
+}
+
+/* Keyframes */
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9)
+}
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9)
+}
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+}
+
+@keyframes fade-in-l {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px) scale(0.9)
+}
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+
+}
+
+
+
+/*GALLERY TEST*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo {
+    animation: fade-up 1s;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    border: 1px solid #c7c7c7;
+}
+
+@media(max-width:1000px){
+    .photo-gallery {
+        flex-direction: column;
+    }
+}
+
+/*PORTFOLIOGALLERY*/
+
+.port-title {
+    margin-bottom: 25px;
+}
+
+.photo_port img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    border: 1px solid #c7c7c7;
+}
+
+.port-description p {
+    width: 425px;
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.port-collaborators p {
+    width: 425px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.port-collaborators h4{
+    margin-bottom: 10px;
+}
+
+.photo img:hover {
+    width: 101%;
+    height: 101%;
+    transition: 0.5s;
+}
