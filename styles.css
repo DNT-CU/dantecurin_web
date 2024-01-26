@@ -285,3 +285,12 @@ footer a:hover {
     height: 101%;
     transition: 0.5s;
 }
+
+.icon-footer {
+    height: 20px;
+    width: auto;
+}
+
+.icon-footer :hover {
+    opacity: 0.8;
+}
