@@ -162,6 +162,22 @@ footer a:hover {
     color: rgba(30, 30, 30, 0.25);
 }
 
+/* ---- Navbar Responsiveness---------- */
+
+@media screen and (max-width: 400px) {
+   .intro-container {
+    margin-top: 0;
+   }
+
+    nav ul li a {
+        font-family: Inter;
+        color: #1e1e1e;
+        font-size: 21px;
+    }
+
+} 
+
+
 /* Keyframes */
 
 @keyframes fade-up {
@@ -294,3 +310,15 @@ footer a:hover {
 .icon-footer :hover {
     opacity: 0.8;
 }
+
+/*GALLERY RESPONSIVENESS*/
+
+@media screen and (max-width: 400px) {
+   .container {
+    max-width: 390px;
+    width: 300px;
+    padding: 0;
+    margin-bottom: 50px;
+   }
+ } 
+ 
