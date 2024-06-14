@@ -87,8 +87,8 @@ nav ul .dantecurin a{
 }
 
 
-nav ul li a p {
-    font-weight: 800;
+nav ul li a {
+    color: #7E7E7E;
 }
 
 nav ul li a:hover {
