@@ -6,8 +6,8 @@ html {
 
 body {
     background-color: #1d1d1d;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 2vw;
+    margin-right: 2vw;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -27,6 +27,8 @@ main {
 .intro-container {
     margin-top: 0;
     margin-bottom: 15px;
+    margin-left: 2vw;
+    margin-right: 2vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
     padding-right: 30px;
@@ -68,6 +70,11 @@ height: auto;
     margin-top: 5px;
 }
 
+.nav-wraper {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
 nav ul .dantecurin a{
     color: #7E7E7E;
     font-family: Inter;
@@ -76,10 +83,9 @@ nav ul .dantecurin a{
     font-weight: 700;
 }
 
-nav ul li a {
-    font-family: Inter;
-    color:#7E7E7E;
-    font-size: 17px;
+
+nav ul li a p {
+    font-weight: 800;
 }
 
 nav ul li a:hover {
@@ -97,9 +103,8 @@ h1 {
     color: var(--Black-100, #cdcdcd);
     text-align: center;
     font-family: Inter;
-    font-size: 40px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 700 !important;
     line-height: normal;
 }
 
@@ -144,6 +149,7 @@ h4 {
     animation: fade-down 0.5s;
     margin-top: 50px;
     color: #ff4753;
+    font-size: 40px;
 }
 
 
@@ -269,9 +275,6 @@ footer a:hover {
 }
 
 .container {
-
-    width: 100%;
-    margin: auto;
     padding: 0px;
     margin-bottom: 25px;
     display: flex;
