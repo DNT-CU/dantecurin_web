@@ -66,15 +66,16 @@ height: auto;
 /* Nav adjustments */
 
 .nav-container {
-    width: 100%;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 5px;
     animation: fade-down 0.5s;
     margin-top: 5px;
 }
 
 .nav-wraper {
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin: auto;
 }
 
 nav ul .dantecurin a{
