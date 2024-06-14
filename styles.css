@@ -1,0 +1,392 @@
+/* CSS? */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #1d1d1d;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    /*Background gradient*/
+    background-image: linear-gradient(to left bottom, #1b1b1b, #161616, #111111, #090909, #000000);
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
+.intro_text {
+    max-width: 656px;
+    margin: auto;   
+}
+
+.intro-container {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60vh;
+    animation: fade-down 0.5s;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    background-image: linear-gradient(to right top, #181818, #1c1c1c, #1f1f1f, #232323, #272727);
+}
+
+.intro-container-wrapper {
+    margin-top: 40px;
+}
+
+/* paragraphs CSS */
+p {
+    color: var(--Black-50, var(--Black-50, #7E7E7E));
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    }
+
+/* img CSS */
+img.responsive-img {
+width: 128px;
+height: auto;
+}
+
+/* Nav adjustments */
+
+.nav-container {
+    width: 100%;
+    margin-bottom: 5px;
+    animation: fade-down 0.5s;
+    margin-top: 5px;
+}
+
+nav ul .dantecurin a{
+    color: #7E7E7E;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+nav ul li a {
+    font-family: Inter;
+    color:#7E7E7E;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #a7a7a7;
+}
+
+nav ul .dantecurin a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #a7a7a7;
+    opacity: 0.5;
+}
+    
+h1 {
+    color: var(--Black-100, #cdcdcd);
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    color: var(--Black-100, #cdcdcd);
+    text-align:left;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 10px 0px 5px 0px;
+    padding:0;
+;
+}
+
+h3 {
+    color: var(--Black-100, #cdcdcd);
+    text-align:left;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:0;
+    padding:0;
+}
+
+h4 {
+    color: var(--Black-100, #cdcdcd);
+    text-align:left;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin:20;
+    padding:0;
+}
+
+.letstalk {
+    animation: fade-down 0.5s;
+    margin-top: 50px;
+    color: #ff4753;
+}
+
+
+/* Responsiveness---------- */
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+/* Footer adjustments */
+
+.page-footer {
+    height: 60px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    color: var(--Black-50, var(--Black-50, #cdcdcd));
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+footer a {
+    padding-right: 15px;
+}
+
+footer a:hover {
+    padding-right: 15px;
+    color: rgba(30, 30, 30, 0.25);
+}
+
+.footer{
+ color: #7E7E7E;
+}
+
+/* ---- Navbar Responsiveness---------- */
+
+@media screen and (max-width: 600px) {
+   .intro-container {
+    margin-top: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 450px;
+   }
+
+    nav ul li a {
+        font-family: Inter;
+        color: #cdcdcd;
+        font-size: 21px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .back {
+        opacity: 0;
+    }
+   
+} 
+
+
+/* Text Responsiveness */
+
+@media screen and (max-width: 840px) {
+    .intro_text p{
+        font-size: 16px;
+    }
+   
+} 
+
+/* Keyframes */
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9)
+}
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9)
+}
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+}
+
+@keyframes fade-in-l {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px) scale(0.9)
+}
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+
+}
+
+
+
+/*GALLERY TEST*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+
+}
+
+.column {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.photo {
+    animation: fade-up 1s;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #1b1b1b;
+}
+
+@media(max-width:1000px){
+    .photo-gallery {
+        flex-direction: column;
+    }
+}
+
+/*PORTFOLIOGALLERY*/
+
+.port-title {
+    margin-bottom: 25px;
+}
+
+
+.photo_port img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #1b1b1b;
+}
+
+.port-description p {
+    width: 425px;
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    max-width: 90%;
+}
+
+.port-collaborators p {
+    width: 425px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.port-collaborators h4{
+    margin-bottom: 10px;
+}
+
+.photo img:hover {
+    width: 101%;
+    height: 101%;
+    transition: 0.5s;
+}
+
+.icon-footer {
+    height: 20px;
+    width: auto;
+    color: #cdcdcd;
+}
+
+.icon-footer :hover {
+    opacity: 0.8;
+}
+
+.back {
+    margin-top: 10px;
+}
+
+.portfoliotext {
+    margin-top: 0;
+    margin-bottom: auto;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 120px;
+}
+
+.portfoliowrapper {
+    display: flex;
+    flex-direction: row;
+}
+/*GALLERY RESPONSIVENESS*/
+
+@media screen and (max-width: 400px) {
+   .container {
+    max-width: 390px;
+    width: 300px;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+   }
+ } 
+ 
