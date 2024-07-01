@@ -10,10 +10,8 @@ body {
     margin-right: 2vw;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    max-height: 100vh;
     flex-direction: column;
-    /*Background gradient*/
-    background-image: linear-gradient(to left bottom, #1b1b1b, #161616, #111111, #090909, #000000);
 }
 
 main {
@@ -29,10 +27,12 @@ main {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
     width: 70vw;
     padding-top: 5vh;
     padding-right: 30px;
     padding-left: 30px;
+    padding-bottom: 80px;
     height: 60vh;
     animation: fade-down 0.5s;
     background-color: #1d1d1d;
@@ -390,6 +390,7 @@ footer a:hover {
 .icon-footer :hover {
     opacity: 0.8;
 }
+
 
 .back {
     margin-top: 10px;
