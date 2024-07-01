@@ -32,8 +32,6 @@ main {
     padding-top: 5vh;
     padding-right: 30px;
     padding-left: 30px;
-    padding-bottom: 80px;
-    height: 60vh;
     animation: fade-down 0.5s;
     background-color: #1d1d1d;
     border-radius: 10px;
@@ -41,8 +39,12 @@ main {
     
 }
 
+
+
+
 .intro-container-wrapper {
     margin-top: 40px;
+    height: 55vh;
 }
 
 /* paragraphs CSS */
@@ -70,7 +72,6 @@ height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
@@ -174,6 +175,44 @@ h4 {
     height: auto;
   }
 
+/* Viewport adjustments (nav and content) */
+
+@media screen and (max-width:1440px) {
+
+    .nav-container {
+        width: 90vw;
+        max-width: 90vw;
+    }
+
+    .intro-container {
+        width: 90vw;
+    }
+
+    .container {
+        width: 90vw !important;
+        max-width: 90vw !important;
+    }
+}
+
+@media screen and (min-width:1441px) {
+
+    .nav-container {
+        width: 90vw;
+        max-width: 90vw;
+    }
+
+    .intro-container {
+        width: 90vw;
+    }
+
+    .container {
+        width: 90vw !important;
+        max-width: 90vw !important;
+    }
+
+
+}
+
 /* Footer adjustments */
 
 .page-footer {
@@ -220,7 +259,6 @@ footer a:hover {
    .intro-container {
     margin-top: auto;
     padding-top: 0;
-    padding-bottom: 0;
     height: 450px;
    }
 
@@ -244,6 +282,9 @@ footer a:hover {
 @media screen and (max-width: 840px) {
     .intro_text p{
         font-size: 16px;
+    }
+    .letstalk {
+        font-size:30px;
     }
    
 } 
@@ -302,7 +343,7 @@ footer a:hover {
     padding: 0px;
     margin-bottom: 25px;
     width: 100% !important;
-    max-width: 70vw !important;
+    max-width: 90vw !important;
 }
 
 .photo-gallery {
