@@ -10,7 +10,7 @@ body {
     margin-right: 2vw;
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
+
     flex-direction: column;
 }
 
@@ -107,6 +107,27 @@ nav ul .dantecurin a:hover {
     background-color: rgba(0, 0, 0, 0) !important;
     color: #a7a7a7;
     opacity: 0.5;
+}
+
+.hamburger-menu {
+    width: 25px;
+    margin: auto 0 auto 0;
+    
+}
+
+a .hamburger-menu {
+    padding: 0;
+}
+
+@media screen and (min-width:391px) {
+    .hamburger-menu-ul {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: none;
+        z-index: 1;
+    }
 }
 
 .smoothed {
@@ -216,12 +237,15 @@ h4 {
 /* Footer adjustments */
 
 .page-footer {
-    height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 70px;
+
 }
 
 .footer {
@@ -231,18 +255,6 @@ h4 {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-
-
-}
-
-
-footer a {
-    padding-right: 15px;
-}
-
-footer a:hover {
-    padding-right: 15px;
-    color: rgba(30, 30, 30, 0.25);
 }
 
 .footer{
@@ -253,9 +265,15 @@ footer a:hover {
     font-size: 12px;
 }
 
+.other-links {
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /* ---- Navbar Responsiveness---------- */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
    .intro-container {
     margin-top: auto;
     padding-top: 0;
@@ -269,7 +287,7 @@ footer a:hover {
     }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 501px) {
     .back {
         opacity: 0;
     }
