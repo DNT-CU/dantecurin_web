@@ -1,4 +1,4 @@
-/* CSS??? */
+/* CSS */
 
 html {
     scroll-behavior: smooth;
@@ -6,11 +6,7 @@ html {
 
 body {
     background-color: #1d1d1d;
-    margin-left: 2vw;
-    margin-right: 2vw;
     display: flex;
-    flex-direction: column;
-
     flex-direction: column;
 }
 
@@ -29,14 +25,14 @@ main {
     margin-right: auto;
     margin-bottom: 15px;
     width: 70vw;
-    padding-top: 5vh;
+    padding-top: 48px;
     padding-right: 30px;
     padding-left: 30px;
     animation: fade-down 0.5s;
     background-color: #1d1d1d;
     border-radius: 10px;
     background-image: linear-gradient(to right top, #181818, #1c1c1c, #1f1f1f, #232323, #272727);
-    
+    height: 520px;
 }
 
 
@@ -49,7 +45,7 @@ main {
 
 /* paragraphs CSS */
 p {
-    color: var(--Black-50, var(--Black-50, #7E7E7E));
+    color: var(--Black-50, var(--Black-50, #b0b0b0));
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-size: 21px;
@@ -66,60 +62,112 @@ height: auto;
 
 /* Nav adjustments */
 
+nav {
+    background-color: transparent !important;
+    color: transparent !important;
+    box-shadow: none !important;
+}
 
 .nav-container {
-        
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-    animation: fade-down 0.5s;
     margin-top: 5px;
 }
 
 .nav-wraper {
-    
     margin: auto;
 }
 
-nav ul .dantecurin a{
-    
-    color: #7E7E7E;
+.dantecurin {
+    margin-left: 18px;
+    color: #b0b0b0;
     font-family: Inter;
     font-size: 21px;
     font-style: normal;
     font-weight: 700;
 }
 
+.dantecurin:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #d3d3d3;
+    opacity: 0.5;
+}
+
+nav ul .dantecurin a{
+    
+    color: #b0b0b0;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
 nav ul li a {
-    color: #7E7E7E;
+    color: #b0b0b0;
 
 }
 
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0) !important;
-    color: #a7a7a7;
+    color: #d3d3d3 !important;
 }
+
+.sidenav li a {
+    color: #b0b0b0 !important;
+
+}
+
+.sidenav li a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #d3d3d3 !important;
+}
+
 
 nav ul .dantecurin a:hover {
     background-color: rgba(0, 0, 0, 0) !important;
-    color: #a7a7a7;
+    color: #d3d3d3;
     opacity: 0.5;
 }
 
+.list-nav-item-mobile {
+    border-top: 1px solid #b0b0b0; /* Borde de 1px sólido arriba */
+
+}
+
+.list-nav-item-mobile-start {
+    border-top: 1px solid #b0b0b0; /* Borde de 1px sólido arriba */
+    margin-top: 28px;
+}
+
+.list-nav-item-mobile-end {
+    width: 100%;
+    height: 48px;
+    padding-left: 32px;
+    border-top: 1px solid #b0b0b0; /* Borde de 1px sólido arriba */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 16px;
+}
+
 .hamburger-menu {
-    width: 25px;
-    margin: auto 0 auto 0;
-    
+    padding-right: 15px;
 }
 
-a .hamburger-menu {
-    padding: 0;
+.sidenav {
+    background-color: #292929 !important;
+    width: 210px !important;
+    padding-top: 28px;
+
+
 }
 
-@media screen and (min-width:391px) {
+@media screen and (min-width:601px) {
     .hamburger-menu-ul {
         display: none;
     }
@@ -135,6 +183,11 @@ a .hamburger-menu {
     -moz-osx-font-smoothing: grayscale;
   }
     
+.material-icons {
+    color: #b0b0b0;
+}
+ 
+  
 h1 {
     color: var(--Black-100, #cdcdcd);
     text-align: center;
@@ -258,7 +311,7 @@ h4 {
 }
 
 .footer{
- color: #7E7E7E;
+ color: #b0b0b0;
 }
 
 .footer p {
@@ -277,7 +330,7 @@ h4 {
    .intro-container {
     margin-top: auto;
     padding-top: 0;
-    height: 450px;
+    height: 470px;
    }
 
     nav ul li a {

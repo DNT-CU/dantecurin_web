@@ -9,7 +9,7 @@
 
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link rel="stylesheet" href="/styles.css">
+ 
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -30,48 +30,53 @@
 </head>
 <body>
     
-<div class="nav-container">
+<header class="nav-container">
+    <!-- Materialize CSS Navbar -->
+    <nav>
+    <div class="nav-wrapper">
 
-<!-- Materialize CSS Navbar -->
-<div class="navbar-main">
-    <nav class="transparent nav_adjustments z-depth-0">
-        <div class="nav-wraper">
-            <div class="nav-container">
-
-            <!-- Brand Logo Icon Materialize CSS -->
-            <ul id="nav-mobile" class="left hide-on-small-and-down logo">
-            <li class="dantecurin"><a href="/index.html">Dante Curín</a></li>
-            </ul>
-
-             <!-- Ul List Navbar-->
-             <ul  class="right hide-on-small-and-down">
-            <li class="list-nav-item"><a href="/index.html">Design</a></li>
-            <li class="list-nav-item"><a href="/files/CV_DANTE_D_2024_V4.pdf" target=”_blank”>CV</a></li>
-            <li class="list-nav-item"><a href="https://wa.me/56979472078" target="_blank">Let's Chat!</a></li>
-            </ul>
-      </nav>
-
-<!-- Back Icon-->
-<a href="/index.html"> 
-    <svg class="icon-footer back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.48 46.06">
-      <defs>
-        <style>
-          .cls-1 {
-            fill: #7e7e7e;
-            stroke-width: 0px;
-          }
-        </style>
-      </defs>
-      <polygon class="cls-1" points="19.42 46.06 0 23.03 19.42 0 22.48 2.58 5.23 23.03 22.48 43.48 19.42 46.06"/>
-    </svg>
-
-</a>
-
-            </div>
+        <!-- Brand Logo Icon Materialize CSS -->
+        <div id="nav-mobile" class="left logo">
+        <a href="/index.html" class="dantecurin">Dante Curín</a>
         </div>
-    </nav> 
-</div>
-</div>
+
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+        <li class="list-nav-item"><a href="/index.html">Design</a></li>
+        <li class="list-nav-item"><a href="/files/CV_DANTE_D_2024_V4.pdf" target=”_blank”>CV</a></li>
+        <li class="list-nav-item"><a href="https://wa.me/56979472078" target="_blank">Let's Chat!</a></li>
+        </ul>
+    </div>
+    </nav>
+    <ul class="sidenav right" id="mobile-demo">
+    <a href="/index.html" class="dantecurin">Dante Curín</a>
+    <li class="list-nav-item-mobile-start"><a href="/index.html">Design</a></li>
+    <li class="list-nav-item-mobile"><a href="/files/CV_DANTE_D_2024_V4.pdf" target=”_blank”>CV</a></li>
+    <li class="list-nav-item-mobile"><a href="https://wa.me/56979472078" target="_blank">Let's Chat!</a></li>
+    <div class="list-nav-item-mobile-end">
+        <a href="/index.html" class="left" id="closebutton"> 
+            <svg width="24" height="24" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 8.17839L19.8478 7L11.2222 15.8216L10 17L11.2222 18.25L19.8478 27L21 25.8216L12.3744 17L21 8.17839Z" fill="#B0B0B0"/>
+                <circle cx="17" cy="17" r="16.25" stroke="#B0B0B0" stroke-width="1.5"/>
+                </svg>
+                
+                <defs>
+                <style>
+                    .cls-1 {
+                    fill: #7e7e7e;
+                    stroke-width: 0px;
+                    }
+                </style>
+                </defs>
+                <polygon class="cls-1" points="19.42 46.06 0 23.03 19.42 0 22.48 2.58 5.23 23.03 22.48 43.48 19.42 46.06"/>
+            </svg>
+        
+        </a>
+    </div>
+
+    </ul>
+</header>
+
 
 <!-------------------Content----------------->
 
@@ -148,7 +153,7 @@
                       <defs>
                           <style>
                           .cls-1 {
-                              fill: #7e7e7e;
+                              fill: #b0b0b0;
                               fill-rule: evenodd;
                               stroke-width: 0px;
                           }
@@ -166,7 +171,7 @@
                         }
                   
                         .cls-1, .cls-2 {
-                          fill: #7e7e7e;
+                          fill: #b0b0b0;
                           stroke-width: 0px;
                         }
                       </style>
@@ -183,4 +188,10 @@
 </footer>
 
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(elems);
+    });
+</script>
 </html>
