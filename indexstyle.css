@@ -26,13 +26,10 @@ main {
     margin-bottom: 15px;
     width: 70vw;
     padding-top: 48px;
-    padding-right: 30px;
-    padding-left: 30px;
     animation: fade-down 0.5s;
     background-color: #1d1d1d;
     border-radius: 10px;
-    background-image: linear-gradient(to right top, #181818, #1c1c1c, #1f1f1f, #232323, #272727);
-    height: 520px;
+    height: 720px;
 }
 
 
@@ -293,11 +290,13 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: auto;
     margin-bottom: auto;
-    height: 70px;
+    height: 120px;
 
 }
 
@@ -319,11 +318,17 @@ h4 {
 }
 
 .other-links {
-    width: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+.flex-horizontal-8px {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
 /* ---- Navbar Responsiveness---------- */
 
 @media screen and (max-width: 500px) {
@@ -418,7 +423,6 @@ h4 {
 }
 
 .photo-gallery {
-    margin-top: -25px;
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -427,12 +431,10 @@ h4 {
 }
 
 .column {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 
 .photo {
     animation: fade-up 1s;
@@ -535,3 +537,18 @@ h4 {
    }
  } 
  
+ @media screen and (max-width: 768px) {
+    .intro-container {
+        height: 560px;
+    }
+
+    .photo-gallery {
+        flex-direction: column-reverse;
+    }
+
+    .port-description { 
+        margin-bottom: 120px;
+    }
+ }
+
+
